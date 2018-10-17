@@ -22,8 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+let {color, make, model, year} = carDetails
 
 ////////// PROBLEM 2 //////////
 
@@ -34,7 +33,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  let {firstName, lastName, title} = obj;
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -54,8 +53,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function totalPopulation(obj){
+let {utah, california, texas, arizona} = obj;
+return utah + california + texas + arizona;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -68,13 +69,20 @@ function greeting( obj ) {
 */
 
 //Code Here
+function ingredients(obj){
+  var newArr = [];
+  let {carb, fat, protein} = obj;
+  newArr.push(carb, fat, protein);
+  return newArr;
+} 
 
 
 
 ////////// PROBLEM 5 //////////
 
 /*
-  Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
+  Now we will use object destructuring as the function's parameter instead of destructuring the object 
+  inside of the function declaration.
   Example:
     function example( {one, two, three} ) {
       return one + two + three
@@ -86,6 +94,9 @@ function greeting( obj ) {
 */
 
 //Code Here
+function largeNumbers( {first, second, third} ) {
+  
+}
 
 
 
